@@ -1,2 +1,2 @@
-hello_world
+arduino_link:hello_world
 -DCATKIN_DEVEL_PREFIX=/home/cspradli/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/cspradli/catkin_ws/install -G Unix Makefiles
