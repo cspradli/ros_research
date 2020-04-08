@@ -1,2 +1,2 @@
-
--DPYTHON_EXECUTABLE=/usr/bin/python3 -DCATKIN_DEVEL_PREFIX=/home/cspradli/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/cspradli/catkin_ws/install -G Unix Makefiles
+hello_world
+-DCATKIN_DEVEL_PREFIX=/home/cspradli/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/cspradli/catkin_ws/install -G Unix Makefiles
