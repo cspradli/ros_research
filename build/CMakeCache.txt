@@ -242,6 +242,9 @@ LSB_FOUND:BOOL=TRUE
 //Path to a program.
 LSB_RELEASE_EXECUTABLE:FILEPATH=/usr/bin/lsb_release
 
+//Dependencies for target
+LibsModule_LIB_DEPENDS:STATIC=
+
 //Path to a program.
 NOSETESTS:FILEPATH=/usr/bin/nosetests
 

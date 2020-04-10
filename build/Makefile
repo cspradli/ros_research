@@ -479,6 +479,19 @@ std_msgs_generate_messages_py/fast:
 	$(MAKE) -f arduino_link/CMakeFiles/std_msgs_generate_messages_py.dir/build.make arduino_link/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
 
+#=============================================================================
+# Target rules for targets named simuino
+
+# Build rule for target.
+simuino: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 simuino
+.PHONY : simuino
+
+# fast build rule for target.
+simuino/fast:
+	$(MAKE) -f arduino_link/CMakeFiles/simuino.dir/build.make arduino_link/CMakeFiles/simuino.dir/build
+.PHONY : simuino/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -516,6 +529,7 @@ help:
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_py"
+	@echo "... simuino"
 .PHONY : help
 
 

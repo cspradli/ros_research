@@ -91,6 +91,17 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # Special rule for the target list_install_components
 list_install_components:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
@@ -123,17 +134,6 @@ install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
-
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -392,6 +392,48 @@ std_msgs_generate_messages_py/fast:
 	cd /home/cspradli/catkin_ws/build && $(MAKE) -f arduino_link/CMakeFiles/std_msgs_generate_messages_py.dir/build.make arduino_link/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
 
+# Convenience name for target.
+arduino_link/CMakeFiles/simuino.dir/rule:
+	cd /home/cspradli/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 arduino_link/CMakeFiles/simuino.dir/rule
+.PHONY : arduino_link/CMakeFiles/simuino.dir/rule
+
+# Convenience name for target.
+simuino: arduino_link/CMakeFiles/simuino.dir/rule
+
+.PHONY : simuino
+
+# fast build rule for target.
+simuino/fast:
+	cd /home/cspradli/catkin_ws/build && $(MAKE) -f arduino_link/CMakeFiles/simuino.dir/build.make arduino_link/CMakeFiles/simuino.dir/build
+.PHONY : simuino/fast
+
+src/simuino/simuino.o: src/simuino/simuino.cpp.o
+
+.PHONY : src/simuino/simuino.o
+
+# target to build an object file
+src/simuino/simuino.cpp.o:
+	cd /home/cspradli/catkin_ws/build && $(MAKE) -f arduino_link/CMakeFiles/simuino.dir/build.make arduino_link/CMakeFiles/simuino.dir/src/simuino/simuino.cpp.o
+.PHONY : src/simuino/simuino.cpp.o
+
+src/simuino/simuino.i: src/simuino/simuino.cpp.i
+
+.PHONY : src/simuino/simuino.i
+
+# target to preprocess a source file
+src/simuino/simuino.cpp.i:
+	cd /home/cspradli/catkin_ws/build && $(MAKE) -f arduino_link/CMakeFiles/simuino.dir/build.make arduino_link/CMakeFiles/simuino.dir/src/simuino/simuino.cpp.i
+.PHONY : src/simuino/simuino.cpp.i
+
+src/simuino/simuino.s: src/simuino/simuino.cpp.s
+
+.PHONY : src/simuino/simuino.s
+
+# target to generate assembly for a file
+src/simuino/simuino.cpp.s:
+	cd /home/cspradli/catkin_ws/build && $(MAKE) -f arduino_link/CMakeFiles/simuino.dir/build.make arduino_link/CMakeFiles/simuino.dir/src/simuino/simuino.cpp.s
+.PHONY : src/simuino/simuino.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -401,6 +443,7 @@ help:
 	@echo "... install/strip"
 	@echo "... install/local"
 	@echo "... rebuild_cache"
+	@echo "... test"
 	@echo "... list_install_components"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... roscpp_generate_messages_eus"
@@ -419,7 +462,10 @@ help:
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_py"
-	@echo "... test"
+	@echo "... simuino"
+	@echo "... src/simuino/simuino.o"
+	@echo "... src/simuino/simuino.i"
+	@echo "... src/simuino/simuino.s"
 .PHONY : help
 
 

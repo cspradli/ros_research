@@ -208,4 +208,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "arduino_link/CMakeFiles/std_msgs_generate_messages_nodejs.dir/DependInfo.cmake"
   "arduino_link/CMakeFiles/roscpp_generate_messages_nodejs.dir/DependInfo.cmake"
   "arduino_link/CMakeFiles/std_msgs_generate_messages_py.dir/DependInfo.cmake"
+  "arduino_link/CMakeFiles/simuino.dir/DependInfo.cmake"
   )

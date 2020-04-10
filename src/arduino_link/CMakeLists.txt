@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(arduino_link)
-
+#set(CMAKE_CXX_FLAGS "-lncurses")
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
-
+#add_compile_options(-lncurses)
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
@@ -53,6 +53,11 @@ find_package(catkin REQUIRED COMPONENTS
 #   Message2.msg
 # )
 
+add_executable(simuino src/simuino/simuino.cpp)
+	target_link_libraries(simuino
+		${catkin_LIBRARIES}
+    ncurses
+	)
 ## Generate services in the 'srv' folder
 # add_service_files(
 #   FILES

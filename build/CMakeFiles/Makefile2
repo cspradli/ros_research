@@ -408,7 +408,7 @@ clean: gtest/googlemock/gtest/CMakeFiles/gtest.dir/clean
 # Directory level rules for directory arduino_link
 
 # Convenience name for "all" pass in the directory.
-arduino_link/all:
+arduino_link/all: arduino_link/CMakeFiles/simuino.dir/all
 
 .PHONY : arduino_link/all
 
@@ -428,6 +428,7 @@ arduino_link/clean: arduino_link/CMakeFiles/std_msgs_generate_messages_eus.dir/c
 arduino_link/clean: arduino_link/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
 arduino_link/clean: arduino_link/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
 arduino_link/clean: arduino_link/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+arduino_link/clean: arduino_link/CMakeFiles/simuino.dir/clean
 
 .PHONY : arduino_link/clean
 
@@ -913,6 +914,43 @@ arduino_link/CMakeFiles/std_msgs_generate_messages_py.dir/clean:
 
 # clean rule for target.
 clean: arduino_link/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target arduino_link/CMakeFiles/simuino.dir
+
+# All Build rule for target.
+arduino_link/CMakeFiles/simuino.dir/all:
+	$(MAKE) -f arduino_link/CMakeFiles/simuino.dir/build.make arduino_link/CMakeFiles/simuino.dir/depend
+	$(MAKE) -f arduino_link/CMakeFiles/simuino.dir/build.make arduino_link/CMakeFiles/simuino.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cspradli/catkin_ws/build/CMakeFiles --progress-num=12,13 "Built target simuino"
+.PHONY : arduino_link/CMakeFiles/simuino.dir/all
+
+# Include target in all.
+all: arduino_link/CMakeFiles/simuino.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+arduino_link/CMakeFiles/simuino.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cspradli/catkin_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 arduino_link/CMakeFiles/simuino.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cspradli/catkin_ws/build/CMakeFiles 0
+.PHONY : arduino_link/CMakeFiles/simuino.dir/rule
+
+# Convenience name for target.
+simuino: arduino_link/CMakeFiles/simuino.dir/rule
+
+.PHONY : simuino
+
+# clean rule for target.
+arduino_link/CMakeFiles/simuino.dir/clean:
+	$(MAKE) -f arduino_link/CMakeFiles/simuino.dir/build.make arduino_link/CMakeFiles/simuino.dir/clean
+.PHONY : arduino_link/CMakeFiles/simuino.dir/clean
+
+# clean rule for target.
+clean: arduino_link/CMakeFiles/simuino.dir/clean
 
 .PHONY : clean
 
