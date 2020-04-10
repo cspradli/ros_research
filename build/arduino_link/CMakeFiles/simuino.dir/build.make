@@ -91,7 +91,6 @@ simuino_EXTERNAL_OBJECTS =
 arduino_link/simuino: arduino_link/CMakeFiles/simuino.dir/src/simuino/simuino.cpp.o
 arduino_link/simuino: arduino_link/CMakeFiles/simuino.dir/build.make
 arduino_link/simuino: /opt/ros/melodic/lib/libroscpp.so
-arduino_link/simuino: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
 arduino_link/simuino: /opt/ros/melodic/lib/librosconsole.so
 arduino_link/simuino: /opt/ros/melodic/lib/librosconsole_log4cxx.so
 arduino_link/simuino: /opt/ros/melodic/lib/librosconsole_backend_interface.so
@@ -101,13 +100,19 @@ arduino_link/simuino: /opt/ros/melodic/lib/libxmlrpcpp.so
 arduino_link/simuino: /opt/ros/melodic/lib/libroscpp_serialization.so
 arduino_link/simuino: /opt/ros/melodic/lib/librostime.so
 arduino_link/simuino: /opt/ros/melodic/lib/libcpp_common.so
-arduino_link/simuino: /usr/lib/x86_64-linux-gnu/libboost_system.so
 arduino_link/simuino: /usr/lib/x86_64-linux-gnu/libboost_thread.so
 arduino_link/simuino: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
 arduino_link/simuino: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
 arduino_link/simuino: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
 arduino_link/simuino: /usr/lib/x86_64-linux-gnu/libpthread.so
 arduino_link/simuino: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+arduino_link/simuino: /opt/ros/melodic/lib/libroslib.so
+arduino_link/simuino: /opt/ros/melodic/lib/librospack.so
+arduino_link/simuino: /usr/lib/x86_64-linux-gnu/libpython2.7.so
+arduino_link/simuino: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+arduino_link/simuino: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
+arduino_link/simuino: /usr/lib/x86_64-linux-gnu/libboost_system.so
+arduino_link/simuino: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
 arduino_link/simuino: arduino_link/CMakeFiles/simuino.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cspradli/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable simuino"
 	cd /home/cspradli/catkin_ws/build/arduino_link && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/simuino.dir/link.txt --verbose=$(VERBOSE)
