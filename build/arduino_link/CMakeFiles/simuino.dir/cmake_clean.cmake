@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/simuino.dir/src/simuino/simuino.cpp.o"
-  "simuino.pdb"
-  "simuino"
+  "/home/cspradli/catkin_ws/devel/lib/arduino_link/simuino.pdb"
+  "/home/cspradli/catkin_ws/devel/lib/arduino_link/simuino"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -11,7 +11,6 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
   std_msgs
-  roslib
 )
 
 ## System dependencies are found with CMake's conventions
@@ -53,7 +52,7 @@ find_package(catkin REQUIRED COMPONENTS
 #   Message1.msg
 #   Message2.msg
 # )
-
+catkin_package()
 add_executable(simuino src/simuino/simuino.cpp)
 	target_link_libraries(simuino
 		${catkin_LIBRARIES}
@@ -108,12 +107,12 @@ add_executable(simuino src/simuino/simuino.cpp)
 ## LIBRARIES: libraries you create in this project that dependent projects also need
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
-catkin_package(
+#catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES arduino_link
 #  CATKIN_DEPENDS roscpp rospy std_msgs
 #  DEPENDS system_lib
-)
+#)
 
 ###########
 ## Build ##
